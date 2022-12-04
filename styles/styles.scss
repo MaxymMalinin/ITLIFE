@@ -1,0 +1,66 @@
+@import "./_variables.scss";
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: $color-bg;
+  color: $color-text;
+}
+
+.center {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header-border {
+  border-bottom: 1px solid $color-border;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  &_list {
+    display: flex;
+    gap: 30px;
+
+    &_item {
+      text-transform: uppercase;
+
+      &:hover {
+        color: $color-hover;
+      }
+    }
+  }
+
+  &_button {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 1px solid $color-text;
+    max-width: 130px;
+
+    &:hover {
+      background-color: $color-hover;
+      color: $color-bg;
+      border: 1px solid $color-hover;
+    }
+  }
+}
+
+.logo {
+  min-width: 125px;
+  max-width: 100%;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+
+  &__m {
+    font-size: 18px;
+  }
+}
