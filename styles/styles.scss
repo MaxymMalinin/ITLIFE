@@ -63,4 +63,41 @@ body {
   &__m {
     font-size: 18px;
   }
+
+  &__s {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.main {
+  background-color: $color-bg-alt;
+  padding: 150px 10px;
+}
+
+.section-top {
+  &_heading {
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &_divider {
+    margin: 20px auto 0;
+    border: 0;
+    border-top: 4px solid $color-border-alt;
+    max-width: 45px;
+  }
+
+  &_text {
+    text-align: center;
+    max-width: 570px;
+    margin: 40px auto 0;
+  }
 }
