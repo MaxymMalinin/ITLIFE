@@ -164,34 +164,118 @@ body {
   transform: translate(-50%, -50%);
 
   &_item {
+    display: block;
     width: 42px;
     height: 42px;
-    display: block;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: $color-social no-repeat center;
     transition: 0.5s ease;
 
+    &:hover {
+      background-color: $color-bg;
+    }
+
     &__twitter {
-      background-image: url("../img/twit.svg");
+      background-image: url("../img/tw-white.svg");
 
       &:hover {
-        background-image: url("../img/twit-alt.svg");
+        background-image: url("../img/tw-blue.svg");
       }
     }
 
     &__facebook {
-      background-image: url("../img/fb.svg");
+      background-image: url("../img/fb-white.svg");
 
       &:hover {
-        background-image: url("../img/fb-alt.svg");
+        background-image: url("../img/fb-blue.svg");
       }
     }
 
     &__instagram {
-      background-image: url("../img/ins.svg");
+      background-image: url("../img/inst-white.svg");
+      transform: rotate(-90deg);
 
       &:hover {
-        background-image: url("../img/ins-alt.svg");
+        background-image: url("../img/inst-blue.svg");
+      }
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 40px 10px;
+
+  &_list {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+    gap: 30px;
+
+    &_item {
+      text-transform: uppercase;
+
+      &:hover {
+        color: $color-hover;
+      }
+    }
+  }
+
+  &_social {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+    gap: 10px;
+
+    &_link {
+      display: block;
+      width: 42px;
+      height: 42px;
+      border: 1px solid $color-hover;
+      background: $color-bg no-repeat center;
+      transition: 0.5s ease;
+
+      &:hover {
+        background-color: $color-hover;
+      }
+
+      &__twitter {
+        background-image: url("../img/tw-blue.svg");
+
+        &:hover {
+          background-image: url("../img/tw-white.svg");
+        }
+      }
+
+      &__facebook {
+        background-image: url("../img/fb-blue.svg");
+
+        &:hover {
+          background-image: url("../img/fb-white.svg");
+        }
+      }
+
+      &__instagram {
+        background-image: url("../img/inst-blue.svg");
+
+        &:hover {
+          background-image: url("../img/inst-white.svg");
+        }
+      }
+
+      &__linkedin {
+        background-image: url("../img/in-blue.svg");
+
+        &:hover {
+          background-image: url("../img/in-white.svg");
+        }
+      }
+
+      &__telegram {
+        background-image: url("../img/tg-blue.svg");
+
+        &:hover {
+          background-image: url("../img/tg-white.svg");
+        }
       }
     }
   }
