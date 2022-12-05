@@ -58,6 +58,10 @@ body {
 }
 .text__s {
   font-weight: 300;
+  font-size: 18px;
+}
+.text__xs {
+  font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -66,6 +70,9 @@ body {
   font-weight: 700;
   font-size: 34px;
   line-height: 1.2;
+}
+.heading__xs {
+  font-size: 18px;
 }
 
 .main {
@@ -87,4 +94,75 @@ body {
   text-align: center;
   max-width: 570px;
   margin: 40px auto 0;
+}
+
+.section-team {
+  display: flex;
+  margin-top: 60px;
+  gap: 30px;
+}
+.section-team_heading {
+  white-space: nowrap;
+  margin-top: 20px;
+}
+.section-team_text {
+  color: #646464;
+}
+.section-team_container {
+  position: relative;
+}
+.section-team_container_image {
+  max-width: 270px;
+  min-width: 120px;
+  width: 100%;
+}
+.section-team_container_overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #18b5dc;
+}
+.section-team_container:hover .section-team_container_overlay {
+  opacity: 1;
+  height: 100%;
+}
+
+.social {
+  top: 50%;
+  left: 50%;
+  display: flex;
+  position: absolute;
+  gap: 4px;
+  transform: translate(-50%, -50%);
+}
+.social_item {
+  width: 42px;
+  height: 42px;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s ease;
+}
+.social_item__twitter {
+  background-image: url("../img/twit.svg");
+}
+.social_item__twitter:hover {
+  background-image: url("../img/twit-alt.svg");
+}
+.social_item__facebook {
+  background-image: url("../img/fb.svg");
+}
+.social_item__facebook:hover {
+  background-image: url("../img/fb-alt.svg");
+}
+.social_item__instagram {
+  background-image: url("../img/ins.svg");
+}
+.social_item__instagram:hover {
+  background-image: url("../img/ins-alt.svg");
 }/*# sourceMappingURL=styles.css.map */
