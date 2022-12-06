@@ -12,41 +12,42 @@ body {
   margin-left: auto;
 }
 
-.header-border {
-  border-bottom: 1px solid $color-border;
-}
-
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
+  border-bottom: 1px solid $color-border;
 
-  &_list {
+  &_content {
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
 
-    &_item {
+    &_list {
+      display: flex;
+      gap: 30px;
+    }
+
+    &_button {
       text-transform: uppercase;
+      padding: 10px 20px;
+      border: 1px solid $color-text;
+      max-width: 130px;
+      transition: 0.5s ease;
 
       &:hover {
-        color: $color-hover;
+        background-color: $color-hover;
+        color: $color-bg;
+        border: 1px solid $color-hover;
       }
     }
   }
+}
 
-  &_button {
-    text-transform: uppercase;
-    padding: 10px 20px;
-    border: 1px solid $color-text;
-    max-width: 130px;
+.link {
+  text-transform: uppercase;
 
-    &:hover {
-      background-color: $color-hover;
-      color: $color-bg;
-      border: 1px solid $color-hover;
-    }
+  &:hover {
+    color: $color-hover;
   }
 }
 
@@ -126,6 +127,7 @@ body {
   }
 
   &_container {
+    display: flex;
     position: relative;
 
     &_image {
@@ -210,14 +212,6 @@ body {
     justify-content: center;
     margin-top: 28px;
     gap: 30px;
-
-    &_item {
-      text-transform: uppercase;
-
-      &:hover {
-        color: $color-hover;
-      }
-    }
   }
 
   &_social {
